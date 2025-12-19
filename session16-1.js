@@ -1,4 +1,4 @@
-// Lecture 1 :
+// Bài 1
 // Sử dụng hàm confirm để nhận thông tin đầu vào và đưa ra quyết định dựa trên những thông tin đó.
 // Hàm này đánh giá giá trị có trong đối số answer.
 // Nếu giá trị của biến answer là true đồng nghĩa với việc người dùng chọn OK, hàm sẽ tạo biến result và  gán giá trị cho biến result là chuỗi "Excellent. We'll play a nice game of chess."
@@ -17,17 +17,19 @@ let result = processConfirm(answer);
 console.log(result);
 
 
+
+// Bài 2
 // Xây dựng hàm nhận vào một tham số là một mảng cho trước. Hàm thực hiện tìm giá trị nhỏ nhất trong mảng và trả về giá trị đó. Sử dụng hàm vừa xây dựng trên với mảng như sau:
 
-let number = [ 9, 0 , 7 , 6 , -1, -5, 988, 56];
-let min = number[0];
-let count = 0;
-for (let i = 0; i < number.length; i++){
-    if(min > number[i]){
-        min = number[i];
-        count = i;
-    } console.log(number[i]);
-}; console.log("Giá trị nhỏ nhất là :", min, count);
+// let number = [ 9, 0 , 7 , 6 , -1, -5, 988, 56];
+// let min = number[0];
+// let count = 0;
+// for (let i = 0; i < number.length; i++){
+//     if(min > number[i]){
+//         min = number[i];
+//         count = i;
+//     } console.log(number[i]);
+// }; console.log("Giá trị nhỏ nhất là :", min, count);
 
 
 
@@ -58,14 +60,19 @@ console.log(displayPul(arr2));
 console.log(displayPul(arr3));
 console.log(displayPul(arr4));
 
+
+
+// Bài 3
 // Viết một hàm sum() nhận vào hai số và trả về tổng của chúng, và thực hiện hiển thị lên màn hình bằng hàm alert()
 
-function sum(a = 2,b = 2){
+function sum(a,b){
     return a + b;
 };
-alert(sum());
+console.log(sum(5, 7))
+//Kỳ lạ ? Lẽ nào k hiểu đề bài ?
 
 
+// Bài 4
 // Viết một hàm isEven nhận vào một số và trả về true nếu số đó là số chẵn, ngược lại trả về false.
 // Yêu cầu người dùng nhập vào 1 số nguyên bất kỳ bằng hàm prompt()
 // Hiển thị kết quả bằng alert()
@@ -91,6 +98,7 @@ alert(isEven(inp));
 
 
 
+// Bài 5
 // Cho người dùng nhập vào chuỗi ký tự và viết hàm kiểm tra xem đó có phải chuỗi ký tự đối xứng không:
 // Người dùng nhập chuỗi bằng hàm prompt()
 // Viết hàm isPalindrome() để kiểm tra chuỗi đối xứng
@@ -116,16 +124,22 @@ function isPalindrome(textInput){
 
 //Kết quả sao ra không có đúng. Mong được các thầy giải đáp ạ !
 
-
+// Bài 6
 // Tạo hàm tính tổng các phần tử trong mảng, với các mảng như sau:
 // (Gợi ý: có thể dùng reduce() trong javascript)
 
-function sum(total){
-    let reduce = arr5.reduce(function(acc, cur){
-        acc + cur;
-        return acc;
-}, 1);
-};
+
+
 const arr5 = [1, 2, 3, 4, 5, 6];
 const arr6 = [10, 20, 30, 40, 50];
 const arr7 = [1, 3, 5, 7, 9];
+
+
+function result5(arr){
+    return arr.reduce(function(acc, cur){
+        return acc = acc + cur;
+    }, 0);
+};
+console.log(result5(arr5));
+console.log(result5(arr5));
+console.log(result5(arr5));
